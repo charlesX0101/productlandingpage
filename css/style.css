@@ -1471,7 +1471,7 @@ h2 {
   font-weight: 800;
 }
 
-/* Mobile hero spacing after removing the specifications strip */
+/* Mobile hero-to-intro spacing */
 @media (max-width: 640px) {
   .hero {
     min-height: 0;
@@ -1479,11 +1479,11 @@ h2 {
   }
 
   .hero-content {
-    padding-bottom: 28px;
+    padding-bottom: 12px;
   }
 
   .intro {
-    padding-top: 48px;
+    padding-top: 12px;
   }
 
   .intro-grid {
