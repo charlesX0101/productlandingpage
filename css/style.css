@@ -1470,3 +1470,23 @@ h2 {
   color: var(--text);
   font-weight: 800;
 }
+
+/* Mobile hero spacing after removing the specifications strip */
+@media (max-width: 640px) {
+  .hero {
+    min-height: 0;
+    padding-bottom: 0;
+  }
+
+  .hero-content {
+    padding-bottom: 28px;
+  }
+
+  .intro {
+    padding-top: 48px;
+  }
+
+  .intro-grid {
+    padding-top: 0;
+  }
+}
