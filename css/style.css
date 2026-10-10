@@ -1081,18 +1081,18 @@ h2 {
   .hero-content {
     position: relative;
     width: 100%;
-    padding: 72px 20px 32px;
+    padding: 0 20px 32px;
     background: #080909;
   }
 
   .hero-logo-wrap {
-    position: absolute;
-    top: -76px;
-    left: 20px;
+    position: relative;
+    top: auto;
+    left: auto;
     z-index: 4;
     width: 138px;
     height: 138px;
-    margin: 0;
+    margin: -76px 0 10px;
     display: flex;
     align-items: center;
     justify-content: center;
