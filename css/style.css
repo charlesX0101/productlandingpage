@@ -207,35 +207,6 @@ nav a:hover {
   backdrop-filter: blur(8px);
 }
 
-.hero-specs {
-  position: absolute;
-  z-index: 3;
-  right: clamp(24px, 5vw, 80px);
-  bottom: 36px;
-  left: clamp(24px, 5vw, 80px);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  border-top: 1px solid var(--line-strong);
-}
-
-.hero-specs div {
-  padding: 18px 20px 0 0;
-}
-
-.hero-specs span {
-  display: block;
-  margin-bottom: 5px;
-  color: var(--muted-2);
-  font-size: 9px;
-  font-weight: 800;
-  letter-spacing: .15em;
-}
-
-.hero-specs strong {
-  font-size: 13px;
-  letter-spacing: .08em;
-}
-
 .section {
   width: min(var(--max), calc(100% - 48px));
   margin: 0 auto;
@@ -378,23 +349,6 @@ h2 {
   position: absolute;
   bottom: 28px;
   color: var(--muted-2);
-}
-
-.statement-card {
-  display: flex;
-  align-items: flex-end;
-  background:
-    linear-gradient(135deg, rgba(199,255,53,.08), transparent 55%),
-    var(--panel);
-}
-
-.statement-card .statement {
-  max-width: 430px;
-  margin: 0;
-  color: var(--text);
-  font-size: 32px;
-  line-height: 1.05;
-  letter-spacing: -.035em;
 }
 
 .split-media {
@@ -778,10 +732,6 @@ footer p {
     min-height: 850px;
   }
 
-  .hero-specs {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .intro-grid,
   .section-heading,
   .company-grid,
@@ -839,16 +789,6 @@ footer p {
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
-  }
-
-  .hero-specs {
-    left: 22px;
-    right: 22px;
-    bottom: 25px;
-  }
-
-  .hero-specs div {
-    padding-top: 12px;
   }
 
   .section {
@@ -1206,32 +1146,6 @@ h2 {
     letter-spacing: .12em;
   }
 
-  .hero-specs {
-    position: relative;
-    left: auto;
-    right: auto;
-    bottom: auto;
-    width: calc(100% - 40px);
-    margin: 12px 20px 0;
-    padding: 18px 0 28px;
-    grid-template-columns: 1fr 1fr;
-    gap: 22px 14px;
-    border-top: 1px solid rgba(255,255,255,.15);
-  }
-
-  .hero-specs div {
-    padding: 0;
-  }
-
-  .hero-specs span {
-    margin-bottom: 5px;
-    font-size: 8px;
-  }
-
-  .hero-specs strong {
-    font-size: 12px;
-  }
-
   /* GLOBAL MOBILE SECTION SYSTEM */
 
   .section {
@@ -1332,16 +1246,7 @@ h2 {
     margin: 42px 0 12px;
     font-size: 24px;
   }
-
-  .statement-card {
-    min-height: 230px;
-  }
-
-  .statement-card .statement {
-    font-size: 30px;
-  }
-
-  /* SWITCH SECTION */
+/* SWITCH SECTION */
 
   .split-media {
     width: 100%;
@@ -1557,4 +1462,11 @@ h2 {
     width: 54px;
     max-height: 54px;
   }
+}
+
+
+/* Digital Detox */
+.feature-card h3 + p strong {
+  color: var(--text);
+  font-weight: 800;
 }
